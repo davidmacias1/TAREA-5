@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Datos - ¡Estilo Creativo!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <h2>¡Regístrate hoy mismo!</h2>
+      <form id="cliente-form">
+        <fieldset>
+          <legend>Información Personal</legend>
+
+          <div class="form-group">
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+          </div>
+
+          <div class="form-group">
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ej: Gómez López" required>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +593 987654321" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" placeholder="Ej: 1729834567" required>
+          </div>
+
+          <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ej: Calle 123, Barrio X" required>
+          </div>
+
+          <div class="form-group">
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ej: correo@ejemplo.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+              <option value="AR">Argentina</option>
+              <option value="BO">Bolivia</option>
+              <option value="BR">Brasil</option>
+              <option value="CL">Chile</option>
+              <option value="CO">Colombia</option>
+              <option value="EC">Ecuador</option>
+              <option value="SV">El Salvador</option>
+              <option value="US">Estados Unidos</option>
+            </select>
+          </div>
+
+          <div class="form-group radio-group">
+            <label class="radio-label">Género:</label>
+            <input type="radio" id="masculino" name="genero" value="Masculino" checked>
+            <label for="masculino" class="radio-label">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="Femenino">
+            <label for="femenino" class="radio-label">Femenino</label>
+          </div>
+
+          <button type="submit">Registrar</button>
+        </fieldset>
+      </form>
+
+      <div id="mensaje"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

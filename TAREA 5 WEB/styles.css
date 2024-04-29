@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 600px;
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  }
+  
+  h2 {
+    color: #333333; /* Main text color */
+    margin-bottom: 20px; /* Spacing for separation */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select,
+  button {
+    width: 100%;
+    padding: 12px; /* Increased padding for better spacing */
+    border: 1px solid #cccccc; /* Light border */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Set placeholder text color (adjust as needed) */
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="tel"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder {
+    color: #999; /* Light gray for placeholder text */
+  }
+  
+  input[type="date"] {
+    width: calc(100% - 22px); /* Adjust for calendar icon */
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Green hover color */
+  }
+  
+  .radio-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-label {
+    margin-right: 10px;
+  }
+  
+  .legend {
+    color: #555555; /* Softer text color for legend */
+    margin-bottom: 15px; /* Additional spacing */
+  }
+  
+  /* Add focus state (adjust colors as needed) */
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus,
+  select:focus {
+    border-color: #2196F3; /* Blue border on focus */
+  }
+  
+  button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2); /* Subtle focus shadow */
+  }
